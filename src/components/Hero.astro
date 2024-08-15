@@ -1,0 +1,49 @@
+<section class="hero">
+  <img
+    src="https://img.freepik.com/foto-gratis/brownie-chocolate-plato-blanco_1150-20895.jpg?t=st=1722378821~exp=1722382421~hmac=356ea20c2fa7c1387aad3711620a8e3f19751a8e8404339d5b0686691b30c7de&w=1380"
+    alt="Torta Deliciosa"
+  />
+  <h1>Deliciosas Tortas Caseras</h1>
+  <p>Hechas con amor y los mejores ingredientes.</p>
+  <a href="https://wa.me/tu-numero" class="btn-whatsapp">Encargar por WhatsApp</a>
+</section>
+
+<style>
+  .hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: #00000011;
+  }
+  .hero > img {
+    z-index: -1;
+    height: 100%;
+    max-height: 500px;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: var(--text-color-sec);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+</style>

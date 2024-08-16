@@ -20,6 +20,7 @@ const { torta, esPar } = Astro.props
     justify-content: start;
     flex-direction: column;
     padding-bottom: 50px;
+    position: relative;
   }
   .image {
     width: 100%;
@@ -34,13 +35,13 @@ const { torta, esPar } = Astro.props
   }
   .image-data h2 {
     text-transform: uppercase;
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     margin-bottom: 4px;
 		line-height: 1.3;
   }
 
   .image-data p {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     color: var(--text-color-sec);
   }
   .image-data .price {

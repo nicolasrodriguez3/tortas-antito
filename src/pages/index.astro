@@ -84,24 +84,49 @@ tortas = [
   <div class="container">
     <div class="anuncios">
       <div class="anuncio">
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M12 17v-5h-.5m0 5h1M12 9.5V9"/><path d="M5.98 10.762C8.608 5.587 9.92 3 12 3c2.08 0 3.393 2.587 6.02 7.762l.327.644c2.182 4.3 3.274 6.45 2.287 8.022C19.648 21 17.208 21 12.327 21h-.654c-4.88 0-7.321 0-8.307-1.572c-.987-1.572.105-3.722 2.287-8.022z"/></g></svg>
-        ¡Recorda encargar con dos dias de anticipación!
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+          ><g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            ><path d="M12 17v-5h-.5m0 5h1M12 9.5V9"></path><path
+              d="M5.98 10.762C8.608 5.587 9.92 3 12 3c2.08 0 3.393 2.587 6.02 7.762l.327.644c2.182 4.3 3.274 6.45 2.287 8.022C19.648 21 17.208 21 12.327 21h-.654c-4.88 0-7.321 0-8.307-1.572c-.987-1.572.105-3.722 2.287-8.022z"
+            ></path></g
+          ></svg
+        >
+        <span>¡Recorda encargar con dos dias de anticipación!</span>
       </div>
       <div class="anuncio only-desktop">
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"/></svg>
-        Paraná - Entre Ríos
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"
+          ></path></svg
+        >
+        <span>Paraná - Entre Ríos</span>
       </div>
     </div>
     <section id="tortas">
-      {
-        tortas.slice(1).map((torta, i) => (
-          <Torta torta={torta} esPar={i % 2 === 0} />
-        ))
-      }
+      {tortas.slice(1).map((torta, i) => <Torta torta={torta} esPar={i % 2 === 0} />)}
     </section>
-    <div class="anuncios">
-      <div class="anuncio only-mobile">
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"/></svg>
+    <div class="anuncios only-mobile">
+      <div class="anuncio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"
+          ><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"
+          ></path></svg
+        >
         Paraná - Entre Ríos
       </div>
     </div>
@@ -114,23 +139,22 @@ tortas = [
     <section id="contacto">
       <!-- Aquí va la información de contacto -->
     </section>
-  
-</div>
+  </div>
   <Footer />
 </Layout>
 
 <style>
-  .separador{
+  .separador {
     width: 100%;
     height: 50px;
   }
-  
-  .anuncios{
+
+  .anuncios {
     display: grid;
     justify-items: center;
     padding: 50px 1rem;
   }
-  .anuncio{
+  .anuncio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,25 +167,26 @@ tortas = [
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 150px;
   }
-  .anuncio svg{
-    width: 60px;
+  .anuncio svg {
+    width: 48px;
+    flex-shrink: 0;
   }
 
-  .only-desktop{
-    display: none;
+  @media screen and (min-width: 768px) {
+    .anuncios {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .only-mobile {
+      display: none;
+    }
   }
-  @media screen and (min-width: 500px)  {
-    .only-desktop{
-    display: block;
-  }
-  .only-mobile{
-    display: none;
-  }
-  .anuncios{
-    grid-template-columns: repeat(2, 1fr);
-  }
+  @media screen and (max-width: 768px) {
+    .only-desktop {
+      display: none;
+    }
   }
 </style>

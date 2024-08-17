@@ -85,40 +85,23 @@ tortas = [
   <div class="container">
     <div class="anuncios">
       <div class="anuncio">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linejoin="round"><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="1.5"/><path stroke-width="2.25" d="M12 16h.01v.01H12z"/><path stroke-linecap="round" stroke-width="1.5" d="M12 12V8"/></g></svg>
-        <p>¡Recorda encargar con dos dias de anticipación!</p>
-      </div>
-      <!-- <div class="anuncio only-desktop">
-        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
-          ><path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"
-          ></path></svg
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+          ><g fill="none" stroke="currentColor" stroke-linejoin="round"
+            ><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="1.5"></circle><path
+              stroke-width="2.25"
+              d="M12 16h.01v.01H12z"></path><path
+              stroke-linecap="round"
+              stroke-width="1.5"
+              d="M12 12V8"></path></g
+          ></svg
         >
-        <span>Paraná - Entre Ríos</span>
-      </div> -->
+        <p>¡Tomamos pedidos con dos dias de anticipación!</p>
+      </div>
     </div>
     <section id="tortas">
       {tortas.slice(1).map((torta, i) => <Torta torta={torta} esPar={i % 2 === 0} />)}
     </section>
-    <div class="anuncios only-mobile">
-      <div class="anuncio">
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"
-          ><path
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M3 8.593c0-1.527 0-2.29.393-2.735c.139-.159.308-.285.497-.372c1.416-.653 3.272 1.066 4.77 1.013c.197-.007.394-.035.587-.082c2.184-.535 3.552-3.08 5.798-3.39c1.287-.18 2.7.598 3.904 1.014c.99.342 1.485.513 1.768.92C21 5.368 21 5.91 21 6.99v8.421c0 1.527 0 2.29-.393 2.736a1.493 1.493 0 0 1-.497.371c-1.416.653-3.272-1.065-4.77-1.012a2.903 2.903 0 0 0-.587.081c-2.184.535-3.552 3.08-5.798 3.391c-1.281.178-4.847-.75-5.672-1.935C3 18.636 3 18.096 3 17.014V8.593Zm6-2.052v14.255m6-17.615v14.255"
-          ></path></svg
-        >
-        Paraná - Entre Ríos
-      </div>
+    
     </div>
     <section id="testimonios">
       <!-- Aquí van los testimonios de los clientes -->
@@ -140,10 +123,9 @@ tortas = [
   }
 
   .anuncios {
-    display: grid;
-    justify-items: center;
     padding: 50px 0rem;
   }
+
   .anuncio {
     display: flex;
     align-items: center;
@@ -165,12 +147,10 @@ tortas = [
   }
 
   @media screen and (min-width: 768px) {
-    .anuncio{
-    gap: 10px;
+    .anuncio {
+      gap: 10px;
     }
-    .anuncios {
-      /* grid-template-columns: repeat(2, 1fr); */
-    }
+
     .only-mobile {
       display: none;
     }

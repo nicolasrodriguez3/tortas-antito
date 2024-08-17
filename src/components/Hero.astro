@@ -5,7 +5,7 @@
   />
   <h1>Deliciosas Tortas Caseras</h1>
   <p>Hechas con amor y los mejores ingredientes.</p>
-  <a href="https://wa.me/tu-numero" class="btn-whatsapp">Encargar por WhatsApp</a>
+  <a href="https://wa.me/+543435229871" class="btn-whatsapp">Encargar por WhatsApp</a>
 </section>
 
 <style>
@@ -16,7 +16,10 @@
     justify-content: center;
     flex-direction: column;
     color: white;
-    background: #00000011;
+    position: relative;
+    background: #00000040;
+    padding: 0.5rem;
+    text-align: center;
   }
   .hero > img {
     z-index: -1;
@@ -24,18 +27,21 @@
     max-height: 500px;
     position: absolute;
     left: 0;
+    top: 0;
     object-fit: cover;
     width: 100%;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    /* font-weight: 400; */
     font-weight: 700;
     line-height: 1;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: .75rem;
+    font-family: "Rouge Script", cursive;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .btn-whatsapp {
     display: inline-block;
@@ -44,6 +50,6 @@
     color: var(--text-color-sec);
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 </style>

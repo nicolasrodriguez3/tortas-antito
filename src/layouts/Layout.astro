@@ -13,6 +13,9 @@ const { title } = Astro.props
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rouge+Script&display=swap" rel="stylesheet">
     <title>{title}</title>
   </head>
   <body>
@@ -33,16 +36,16 @@ const { title } = Astro.props
     --text-color: #371f1d;
     --text-color: #292221;
     --text-color-light: #fff1f0;
-    --accent-color: #5ebd5e;
+    --accent-color: #db425c;
   }
   html {
     font-family: system-ui, sans-serif;
     background: var(--bg-color);
     color: var(--text-color);
   }
-	body {
-  line-height: 1.5;
-	}
+  body {
+    line-height: 1.5;
+  }
   .container {
     max-width: 1200px;
     margin: 0 auto;

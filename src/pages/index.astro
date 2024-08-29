@@ -1,8 +1,9 @@
 ---
-import Card from "../../src/components/Card.astro"
+
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 import Hero from "../components/Hero.astro"
+import SparklesIcon from "../components/icons/SparklesIcon.astro"
 import Torta from "../components/Torta.astro"
 import Layout from "../layouts/Layout.astro"
 
@@ -77,7 +78,7 @@ tortas = [
 ]
 ---
 
-<Layout title="Tortas Antito | Tortas caseras hechas con amor.">
+<Layout title="Dulce tentación | Tortas caseras hechas con amor.">
   <Header id="main-header" />
   <Header />
   <div class="separador"></div>
@@ -85,17 +86,9 @@ tortas = [
   <div class="container">
     <div class="anuncios">
       <div class="anuncio">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-          ><g fill="none" stroke="currentColor" stroke-linejoin="round"
-            ><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-width="1.5"></circle><path
-              stroke-width="2.25"
-              d="M12 16h.01v.01H12z"></path><path
-              stroke-linecap="round"
-              stroke-width="1.5"
-              d="M12 12V8"></path></g
-          ></svg
-        >
+        <SparklesIcon size="32 " />
         <p>¡Tomamos pedidos con dos dias de anticipación!</p>
+        <SparklesIcon size="32 " />
       </div>
     </div>
     <section id="tortas">

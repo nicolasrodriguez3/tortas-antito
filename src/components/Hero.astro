@@ -1,3 +1,7 @@
+---
+import WhatsappIcon from "./icons/WhatsappIcon.astro";
+---
+
 <section class="hero">
   <img
     src="https://img.freepik.com/foto-gratis/brownie-chocolate-plato-blanco_1150-20895.jpg?t=st=1722378821~exp=1722382421~hmac=356ea20c2fa7c1387aad3711620a8e3f19751a8e8404339d5b0686691b30c7de&w=1380"
@@ -5,7 +9,7 @@
   />
   <h1>Deliciosas Tortas Caseras</h1>
   <p>Hechas con amor y los mejores ingredientes.</p>
-  <a href="https://wa.me/+543435229871" class="btn-whatsapp">Encargar por WhatsApp</a>
+  <a href="https://wa.me/+543435229871" class="btn-whatsapp">Encargar por WhatsApp <WhatsappIcon size="24" /></a>
 </section>
 
 <style>
@@ -33,7 +37,6 @@
   }
   h1 {
     font-size: 3.5rem;
-    /* font-weight: 400; */
     font-weight: 700;
     line-height: 1;
     text-align: center;
@@ -44,12 +47,19 @@
     font-size: 1.2rem;
   }
   .btn-whatsapp {
-    display: inline-block;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
     background: var(--accent-color);
     color: var(--text-color-sec);
+    border: 2px solid transparent;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 50px;
+    transition: border .3s;
+  }
+  .btn-whatsapp:hover{
+    border: 2px solid white;
   }
 </style>
